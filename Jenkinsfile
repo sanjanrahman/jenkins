@@ -7,7 +7,8 @@ pipeline{
    stage('terraform init plan and apply -dev'){
     steps{
      sh "terraform init"
-     sh "terraform plan"     
+     sh "terraform plan"
+     sh "terraform apply"     
     } 
    }
    
